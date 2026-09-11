@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "venusautocodon"
+version = "0.1.0"
+description = "AutoResearch-guided host-specific codon optimization"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["numpy>=2.2.6", "pandas>=2.3.3", "torch>=2.2.2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["autoresearch*", "venusautocodon*"]
+exclude = ["autoresearch.runs*", "autoresearch.assets*"]
+
+[tool.setuptools.package-data]
+autoresearch = ["assets/*.md", "assets/*.json", "program.md", "rm_autoresearch/program.md", "rl_autoresearch/program.md"]
+

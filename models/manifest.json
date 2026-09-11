@@ -1,0 +1,502 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "models": [
+    {
+      "species": "candida_albicans",
+      "label_type": "protein_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.7621518321443389,
+        "output": "species-specific reward score",
+        "sha256": "f419bc2663976e8c78da0f04da57f2e2f54b682fda24ef8d4a3b6390b979c2a0"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 2.438288673135416,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "23314d58634b2094c4821884f82f2d5f56a175d008fd82f32f863408395202eb"
+      },
+      "asset": "candida_albicans.tar.gz",
+      "bytes": 29350303,
+      "sha256": "e241dcdabeef085ce7d63a01beb7f851e67f193a32edbad58db012a3ec05bf36"
+    },
+    {
+      "species": "candida_tropicalis",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.7251305354075187,
+        "output": "species-specific reward score",
+        "sha256": "197e0169d4745de19e78ff5df748da467b63d861d6e06028a2a80383794a27d3"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 5.371367554944893,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "b8f1a76304feed99480ebbed3107b6898204ac4feb292fcb33d4b19d5cb3d322"
+      },
+      "asset": "candida_tropicalis.tar.gz",
+      "bytes": 29370079,
+      "sha256": "d8d632fb9362ea9eb5365bd3d192d8c16f6b056d66cc617844910f25176f2e5f"
+    },
+    {
+      "species": "cyberlindnera_jadinii",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.743115520736908,
+        "output": "species-specific reward score",
+        "sha256": "79c6dc819d18117d97bde3e08ef09305ca1426598974997e7f0bf67d20fdae97"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 3.1138197449419804,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "b18e828a5de4c641a13c4a4f03de87ad943f36fbf30cc286cd3a8c357c44bf4c"
+      },
+      "asset": "cyberlindnera_jadinii.tar.gz",
+      "bytes": 29361498,
+      "sha256": "ba5bb8826e225a37e4b9fe33b3c5157bf89555628d2b44be39cd0cc3bdc4d4b3"
+    },
+    {
+      "species": "debaryomyces_hansenii",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.6748716344357397,
+        "output": "species-specific reward score",
+        "sha256": "d3c12ac3f80ddd2f87ea15ebde53157f3e353de8e598697bcbdfc8fe92ba160e"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 3.1580031528807293,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "a9d16feb3e1aeb24029d6a4d6fe30a37576bf385d575711e67877cebac8b9f55"
+      },
+      "asset": "debaryomyces_hansenii.tar.gz",
+      "bytes": 29353660,
+      "sha256": "c9af27eb4ffbaf4c015541927466eda300f4ae0c1eb0f7bc57e9388d3d3dff75"
+    },
+    {
+      "species": "kluyveromyces_lactis",
+      "label_type": "protein_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.8316285502175919,
+        "output": "species-specific reward score",
+        "sha256": "23e92caec7e9c6ac7bf74fcc31367adde630ff6e674fa7f2aa1ffefcccd086fd"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 2.6711534056621877,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "673b1ef631fb6de2af25d95889b5bae8bacb89aeec77a74c82f8b5c0302a6552"
+      },
+      "asset": "kluyveromyces_lactis.tar.gz",
+      "bytes": 29346431,
+      "sha256": "5023e659ab9f92e2a1c849ffc5a4a614dcfba5e8ddfb435bdfc78337f30939df"
+    },
+    {
+      "species": "kluyveromyces_marxianus",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.6580708022146854,
+        "output": "species-specific reward score",
+        "sha256": "b064e2ff43679d89cd6e7a1b5d85d0a53fd9365b5a4810d751be42708df2792f"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 2.3922797473125534,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "850ce2391f35a0291cfba705dc38ecc2d613e034a05a1a22ccc87746a2e5a28e"
+      },
+      "asset": "kluyveromyces_marxianus.tar.gz",
+      "bytes": 29353956,
+      "sha256": "6b33b2d19455d8f02cbc3c38a6d2e61f5ce1816391ac1aaced6fccd15daf6621"
+    },
+    {
+      "species": "komagataella_pastoris",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.620519735523161,
+        "output": "species-specific reward score",
+        "sha256": "9070d73f4ebd32792152c3f8f6fc1186b4d14558891f90ff07ec878ea3189545"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 4.852494565193898,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "5fce3a954a6f532717537a3081c44b70425ddab9686a805d5680e11acfe93c6e"
+      },
+      "asset": "komagataella_pastoris.tar.gz",
+      "bytes": 29363720,
+      "sha256": "1a85cdc88ce084103948862dfedfd7b9ff0312b7cf6f7b92432bed40dd06b73f"
+    },
+    {
+      "species": "lachancea_thermotolerans",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.7132598900633147,
+        "output": "species-specific reward score",
+        "sha256": "4640036dfa154dbe1a2f30afac0c0e5a39dcbdb57e92659d29a6b48faae094b1"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 2.906970517845659,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "d353be7af5649c52ca1d4c8f8f9ab3e5717f3a058048d03b5d37ea0af91bc15a"
+      },
+      "asset": "lachancea_thermotolerans.tar.gz",
+      "bytes": 29348065,
+      "sha256": "7d6d6135972070f69c1eb6c09c257fc3fb91db4bf787e2475ebdd1134e43c7f5"
+    },
+    {
+      "species": "lipomyces_starkeyi",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.5937521129679,
+        "output": "species-specific reward score",
+        "sha256": "c1de6658907d9d4a7c1e57be37a2e91d088ce7bd2a7741b3d4340db89222b051"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 2.4021534404881595,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "03f22ba30f7abcded75bd86bbeef4758af432e63a0bef98a9a08df5cb604403e"
+      },
+      "asset": "lipomyces_starkeyi.tar.gz",
+      "bytes": 29370002,
+      "sha256": "17eaa2b4e768ebb80bf7ff411c8ac7594c381b4662bd7244ff2ac7963df2fd86"
+    },
+    {
+      "species": "ogataea_parapolymorpha",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.6652730621924021,
+        "output": "species-specific reward score",
+        "sha256": "d41d0c6955ba193bfd55228289eec269ce2659fc4161919749d85a96c4a5eb57"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 3.160049544593114,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "0080bd6bcf144997f6f099ae1a7192999bf6c8c7b539b5a8b0c1018d23560b07"
+      },
+      "asset": "ogataea_parapolymorpha.tar.gz",
+      "bytes": 29351739,
+      "sha256": "3aa9d12d92da235a559a313e2c22faf07b6dbb3f2e2d9077baf631746b2c85a2"
+    },
+    {
+      "species": "saccharomyces_cerevisiae",
+      "label_type": "protein_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.8211597907870308,
+        "output": "species-specific reward score",
+        "sha256": "41bce969e57a8a39d1e3010b33d98e481d1fa02c7df8d6864890bebd896ba8b9"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 3.1628941586426604,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "2e7ba3bb3a83568bfad44eae71a561940fa59b1ae687bc61fee346a60e3738ec"
+      },
+      "asset": "saccharomyces_cerevisiae.tar.gz",
+      "bytes": 29355015,
+      "sha256": "65d46b26e6b4a4b6a08e28fb8aa8651407b7fec81fc973fb4afbf3079928d6da"
+    },
+    {
+      "species": "schizosaccharomyces_pombe",
+      "label_type": "protein_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.6919682272329659,
+        "output": "species-specific reward score",
+        "sha256": "8897c0a26779adf9b5928f6fc5540148f429c72a4167997028e63fa8ac407f66"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 2.659565058957989,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "2cbe91230ecc4cfdbc8f74afad152f2f7740f03c3136220769262a9c4b86c4e4"
+      },
+      "asset": "schizosaccharomyces_pombe.tar.gz",
+      "bytes": 29346133,
+      "sha256": "6678fbb68ed4e6ade61568c9288525e80bc0cab3d5375b9ecb7bb8f07ec5687a"
+    },
+    {
+      "species": "torulaspora_delbrueckii",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.6742097525145292,
+        "output": "species-specific reward score",
+        "sha256": "a96d794df3517d35df0b3e4bdf88914a44d9474189959a6e1980ab81fbed0ea2"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 3.796863127596082,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "239b22901ac386f7acba04cb18dfb71cdbb509286c042030aab5c57fe5ec9a24"
+      },
+      "asset": "torulaspora_delbrueckii.tar.gz",
+      "bytes": 29349989,
+      "sha256": "7c84bbffef4e9141d5d69a6a10e58afa7fc27a1ea5ef545c3721d67506b8f85a"
+    },
+    {
+      "species": "wickerhamomyces_anomalus",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.5754784838136925,
+        "output": "species-specific reward score",
+        "sha256": "dd069a525112b2c46d727514f4280f53c87562deb55735cfc2a7d13839b388bf"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 2.0125706820017224,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "5e447847b2b35296823cb4a591d6005c8b4b00e8c6dd0c58ea3ac0e66d68f41d"
+      },
+      "asset": "wickerhamomyces_anomalus.tar.gz",
+      "bytes": 29376410,
+      "sha256": "fab106943ef4bf74a6cd77aa9c8c2f4f4ad4d2034b56c79e487edb40e166935a"
+    },
+    {
+      "species": "yarrowia_lipolytica",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.7553663912113708,
+        "output": "species-specific reward score",
+        "sha256": "c61aadf8799051dacd25ead9ea8d96366168b1b83cdd5dbd5d7a518c877406bc"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 3.0571507963052054,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "f5e961c3d7cd39ebf8520a419c58fe5f08a2b1d8e60dc82f5b5735371f3a426e"
+      },
+      "asset": "yarrowia_lipolytica.tar.gz",
+      "bytes": 29353511,
+      "sha256": "13a1145b1db473169328d4ae2030faccc6b59f264f1c4c54e8d64399d80be4cc"
+    },
+    {
+      "species": "zygosaccharomyces_rouxii",
+      "label_type": "transcript_abundance",
+      "license": "MIT",
+      "reward_model": {
+        "format": "JSON linear model bundle with learned coefficients and reference features",
+        "selection_metric": "validation_spearman_rho",
+        "selection_value": 0.7423527127078529,
+        "output": "species-specific reward score",
+        "sha256": "e84c937455ec76564851c349a958c12964c5b948960ab3bf6d37aef9ece419c2"
+      },
+      "generator": {
+        "format": "PyTorch state_dict and model_config",
+        "selection_metric": "sample_reward_mean",
+        "selection_value": 3.196471758782826,
+        "model_config": {
+          "d_model": 256,
+          "nhead": 8,
+          "num_encoder_layers": 4,
+          "num_decoder_layers": 4,
+          "dim_feedforward": 1024,
+          "dropout": 0.1,
+          "max_seq_len": 1024,
+          "use_codon_constraint": true
+        },
+        "sha256": "6d6825517e3dbf8b544df779fde7101d348320e25b669ce2797ea1c0d179bcb8"
+      },
+      "asset": "zygosaccharomyces_rouxii.tar.gz",
+      "bytes": 29350162,
+      "sha256": "7955d38b2117d1d5ce8eb96abe432ab388883c64a7b5020789f41642c4403b7c"
+    }
+  ]
+}

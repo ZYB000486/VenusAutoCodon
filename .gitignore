@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+build/
+dist/
+models/*/
+autoresearch/runs/
+autoresearch/data/
+autoresearch/assets/prompt_library/
+predictions*.csv
+predictions*.json
+.DS_Store
+

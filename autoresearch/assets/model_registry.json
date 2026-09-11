@@ -1,0 +1,41 @@
+{
+  "models": [
+    {
+      "name": "small_transformer_seq2seq_v1",
+      "kind": "from_scratch_seq2seq",
+      "source": "trained_inside_autoresearch",
+      "default_config": {
+        "d_model": 256,
+        "nhead": 8,
+        "num_encoder_layers": 4,
+        "num_decoder_layers": 4,
+        "dim_feedforward": 1024,
+        "dropout": 0.1,
+        "max_seq_len": 512,
+        "use_codon_constraint": true
+      },
+      "notes": [
+        "只使用当前物种自己的 AA->CDS 数据训练。",
+        "不依赖外部 checkpoint。"
+      ]
+    },
+    {
+      "name": "handcrafted_reward_ridge_v1",
+      "kind": "local_reward_model",
+      "source": "trained_inside_autoresearch",
+      "notes": [
+        "reward 只用本地 CDS 手工特征。",
+        "不依赖外部 embedding。"
+      ]
+    },
+    {
+      "name": "random_init_evolution_search_v1",
+      "kind": "evolutionary_optimizer",
+      "source": "built_in_search",
+      "notes": [
+        "用于没有 abundance 标签的物种。",
+        "初始种群随机。"
+      ]
+    }
+  ]
+}
